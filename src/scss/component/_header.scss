@@ -1,0 +1,149 @@
+.ez-menu {
+  z-index: 30;
+  position: fixed;
+  width: 100%;
+  // top: 150px;
+  .font-16 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .font-18 {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+  }
+  .font-20 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+  }
+  .font-24 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .color-blue {
+    color: #4683db;
+  }
+  .menu-header {
+    .nav-bar-block {
+      background-color: transparent;
+      padding: 20px 50px;
+      z-index: 9;
+      position: fixed;
+      width: 100%;
+      // transition: background-color 0.5s ease;
+      // transition-delay: 0.7s;
+
+      @media (max-width: breakpoint(lg-end)) {
+        padding: 20px 50px;
+      }
+      @media (max-width: breakpoint(lg-start)) {
+        padding: 20px 50px 20px 50px;
+      }
+      @media (max-width: breakpoint(xs-lg-start)) {
+        padding: 20px 25px 20px 25px;
+      }
+      &.background {
+        background-color: rgba(0, 0, 0, 0.6);
+      }
+      .logo-name {
+        font-size: 30px;
+        line-height: 44px;
+        margin: 0;
+        font-weight: 700;
+        color: white;
+        @media (max-width: breakpoint(lg-end)) {
+          font-size: 26px;
+          line-height: 30px;
+        }
+        @media (max-width: breakpoint(lg-start)) {
+          font-size: 24px;
+          line-height: 28px;
+        }
+        @media (max-width: breakpoint(xs-lg-start)) {
+          font-size: 20px;
+          line-height: 24px;
+        }
+      }
+    }
+
+    &.active {
+      .menubar-block {
+        .menu-line {
+          &.line1 {
+            transform: rotate(45deg) translate(0px, 10px);
+            transition: all 300ms ease-in-out;
+            background-color: $accent-primary-color;
+          }
+          &.line2 {
+            display: none;
+          }
+          &.line3 {
+            transform: rotate(-45deg) translate(-2px, -8px);
+            transition: all 300ms ease-in-out;
+            background-color: $accent-primary-color;
+          }
+        }
+      }
+      // .nav-bar-block {
+      //     background-color: #000000;
+      //     z-index: 9;
+      //     position: relative;
+      //     transition-delay: 0s;
+      // }
+    }
+    .menu-header-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: inherit;
+    }
+    .menubar-block {
+      .menu-line {
+        background-color: $accent-white-color;
+        height: 3px;
+        width: 35px;
+        margin-bottom: 8px;
+        border-radius: 20px;
+        transition: all 300ms ease-in-out;
+        @media (max-width: breakpoint(lg-start)) {
+          width: 30px;
+        }
+      }
+    }
+    .border-right {
+      border-right: 1px solid white;
+    }
+    .py-15 {
+      padding: 0px 15px;
+    }
+    @media (max-width: breakpoint(xs-end)) {
+      .menu-header-wrapper {
+        display: block;
+        padding: 15px 0px;
+      }
+    }
+  }
+
+  .menu-header.active .show-menu {
+    position: absolute;
+    top: 90px;
+    transition: all 1s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+    // box-shadow: -15px -15px 80px rgba(0,0,0,0.16);
+  }
+  &#page-not-found-menu {
+    .menubar-block {
+      .menu-line {
+        background-color: $accent-primary-color;
+      }
+    }
+    .show-menu {
+      // box-shadow: 0px 3px 10px rgb(0 0 0 / 30%);
+    }
+    .menu-content {
+      margin: 10px 0;
+    }
+  }
+}

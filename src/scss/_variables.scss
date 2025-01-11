@@ -1,0 +1,163 @@
+// Table of Contents:
+
+// 1. colors
+// 2. font-size
+// 3. line height
+// 4. font-weight
+// 5. text alignment
+// 6. text transform
+// 7. display
+// 8. overflow
+// 9. position
+// 10. Flex
+// 11. Height, Width
+
+// 1. colors
+
+$text-color: #000000;
+$accent-white-color: #ffffff !default;
+$accent-dark-color: #373737 !default;
+$accent-primary-color: #ff6200 !default;
+
+// 2. Buttons
+
+// 2. font-size
+$font-10: 10px !default;
+$font-12: 12px !default;
+$font-14: 14px !default;
+$font-16: 16px !default;
+$font-18: 18px !default;
+$font-20: 20px !default;
+$font-22: 22px !default;
+$font-24: 24px !default;
+$font-34: 34px !default;
+$font-35: 35px !default;
+$font-26: 26px !default;
+$font-28: 28px !default;
+$font-30: 30px !default;
+$font-32: 32px !default;
+$font-34: 34px !default;
+$font-38: 38px !default;
+$font-40: 40px !default;
+$font-44: 44px !default;
+$font-46: 46px !default;
+$font-50: 50px !default;
+$font-60: 60px !default;
+
+// 3. line height
+$lh-64: 64px !default;
+$lh-50: 50px !default;
+$lh-48: 48px !default;
+$lh-40: 40px !default;
+$lh-44: 44px !default;
+$lh-42: 42px !default;
+$lh-39: 39px !default;
+$lh-38: 38px !default;
+$lh-36: 36px !default;
+$lh-34: 34px !default;
+$lh-32: 32px !default;
+$lh-30: 30px !default;
+$lh-28: 28px !default;
+$lh-26: 26px !default;
+$lh-24: 24px !default;
+$lh-22: 22px !default;
+$lh-20: 20px !default;
+$lh-18: 18px !default;
+$lh-16: 16px !default;
+$lh-14: 14px !default;
+
+// 4. font-weight
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-medium: 500 !default;
+$font-weight-semi-bold: 600 !default;
+$font-weight-bold: 700 !default;
+
+// breakpoints
+$breakpoints: (
+  xs-start: 0px,
+  xs-md-end: 320px,
+  xs-md-start: 350px,
+  xs-lg-start: 480px,
+  xs-end: 575px,
+  sm-start: 576px,
+  sm-slider-start: 720px,
+  sm-end: 767px,
+  md-start: 768px,
+  md-end: 991px,
+  lg-start: 992px,
+  lg-end: 1199px,
+  xl-start: 1200px,
+  xl-laptop: 1440px,
+);
+
+// Padding
+$pd-0: 0px !default;
+$pd-5: 5px !default;
+$pd-10: 10px !default;
+$pd-15: 15px !default;
+$pd-20: 20px !default;
+$pd-25: 25px !default;
+$pd-30: 30px !default;
+$pd-35: 35px !default;
+$pd-40: 40px !default;
+$pd-50: 50px !default;
+$pd-60: 60px !default;
+
+// Margin
+$mr-0: 0px !default;
+$mr-5: 5px !default;
+$mr-10: 10px !default;
+$mr-15: 15px !default;
+$mr-20: 20px !default;
+$mr-25: 25px !default;
+$mr-30: 30px !default;
+$mb-35: 35px !default;
+$mr-40: 40px !default;
+$mr-50: 50px !default;
+$mr-60: 60px !default;
+
+// 5. text alignment
+$text-align-center: center !default;
+$text-align-left: left !default;
+$text-align-right: right !default;
+
+// 6. text transform
+$text-transform-capitalize: capitalize !default;
+$text-transform-lowercase: lowercase !default;
+$text-transform-uppercase: uppercase !default;
+
+// 7. display
+$display-block: block !default;
+$display-flex: flex !default;
+$display-inline-block: inline-block !default;
+$display-inline: inline !default;
+$display-none: none !default;
+
+// 8. overflow
+$overflow-hidden: hidden !default;
+$overflow-auto: auto !default;
+$overflow-scroll: scroll !default;
+
+// 9. position
+$position-relative: relative !default;
+$position-absolute: absolute !default;
+
+// 10. Flex
+$d-flex: flex;
+$flex-start: flex-start;
+$flex-end: flex-end;
+$flex-center: center;
+$flex-between: space-between;
+$flex-column: column;
+$flex-wrap: wrap;
+$align-start: start;
+$align-end: end;
+$align-center: center;
+
+// 11. Height, Width
+$w-100: 100%;
+$h-100: 100%;
+
+//12. transition
+$transition: 300ms ease-in-out;

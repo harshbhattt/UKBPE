@@ -1,0 +1,72 @@
+html {
+  height: $h-100 !important;
+  overflow: hidden;
+}
+body {
+  height: 100vh !important;
+  min-width: $w-100 !important;
+  width: $w-100 !important;
+  font-family: Poppins;
+  font-size: $font-12;
+  font-weight: $font-weight-normal;
+  line-height: $lh-16;
+  background: $accent-white-color;
+  color: $accent-dark-color;
+  backface-visibility: hidden;
+  overflow-y: $overflow-auto !important;
+  overflow-x: $overflow-hidden !important;
+  margin: 0;
+  color: $text-color;
+}
+a {
+  font-size: $font-16;
+  cursor: pointer;
+  text-decoration: none !important;
+  color: $text-color !important;
+  &.hover {
+    text-decoration: none !important;
+  }
+}
+li {
+  list-style: none;
+}
+ul {
+  padding: 0px;
+}
+* {
+  font-family: Poppins;
+  margin: 0px;
+}
+span {
+  font-size: $font-16;
+  line-height: $lh-18;
+  color: $text-color;
+  @media (max-width: breakpoint(sm-end)) {
+    font-size: $font-14;
+  }
+}
+p {
+  font-size: $font-16;
+  font-family: Poppins;
+
+  line-height: $lh-22;
+  color: $text-color;
+  @media (max-width: breakpoint(sm-end)) {
+    font-size: $font-14;
+    line-height: $lh-24 !important;
+  }
+}
+div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
