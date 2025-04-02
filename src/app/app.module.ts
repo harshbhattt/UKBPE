@@ -24,6 +24,7 @@ import { RootComponent } from './components/root/root.component';
   ],
   exports: [
     SharedModule,
+    RouterModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

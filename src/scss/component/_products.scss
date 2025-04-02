@@ -11,3 +11,26 @@
     }
   }
 }
+.home-container {
+  #contact-us {
+    img {
+      background-color: #9a9a9a;
+      border-radius: 5px;
+      margin-right: 15px;
+    }
+    .content-block {
+      img {
+        width: 30px;
+        padding: 7px;
+        height: 30px;
+      }
+    }
+    a {
+      span {
+        &:hover {
+          color: #ff6200 !important;
+        }
+      }
+    }
+  }
+}
