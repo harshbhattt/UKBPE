@@ -16,7 +16,7 @@
     padding: 30px;
 
     .ez-offer-design-col {
-      margin-bottom: 100px;
+      margin-bottom: 30px;
       .wo-offer-wrapper {
         .wo-right-content {
           //   text-align: $text-align-right;
@@ -40,10 +40,14 @@
         }
       }
       .content-text {
-        font-size: 14px;
+        font-size: 16px;
         margin-bottom: 20px;
         display: block;
-        line-height: 26px;
+        line-height: 30px;
+        @media (max-width: breakpoint(md-end)) {
+          font-size: 14px;
+          line-height: 26px;
+        }
       }
       @media (max-width: breakpoint(lg-end)) {
         margin-bottom: 0px;
@@ -51,7 +55,7 @@
       .offer-wrapper {
         border-radius: 10px;
         overflow: hidden;
-        height: 100%;
+        // height: 100%;
         box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.16);
         @media (max-width: breakpoint(lg-end)) {
           margin-bottom: 20px;
@@ -76,8 +80,7 @@
         }
         .content-block {
           //   height: 340px;
-          min-height: fit-content;
-          height: 100%;
+          height: 250px;
           background: $accent-white-color;
           padding: 7px 20px 50px 20px;
           position: relative;
@@ -198,6 +201,254 @@
               transform: translate(0px);
             }
           }
+        }
+      }
+    }
+  }
+}
+
+.technology-section {
+  // background: url("#{$imageURl}/ez-platform-bg.png") no-repeat;
+  z-index: 9;
+  background-size: 58.5% 100%;
+  background-position: top right;
+  @media (max-width: breakpoint(md-end)) {
+    background-size: 100% 34%;
+    border-radius: 10px;
+  }
+  @media (max-width: breakpoint(sm-end)) {
+    background-size: 100% 33%;
+  }
+  @media (max-width: breakpoint(xs-lg-start)) {
+    background-size: 100% 30%;
+  }
+  .ez-our-story {
+    // padding-left: 50px;
+    @media (max-width: breakpoint(md-end)) {
+      padding-left: 0;
+    }
+    .our-story-left-panel {
+      padding: 0px 0 50px 0px;
+      @media (max-width: breakpoint(sm-end)) {
+        padding: 30px 60px 50px 60px;
+        display: flex;
+        justify-content: center;
+      }
+      @media (max-width: breakpoint(xs-end)) {
+        padding: 30px 30px 50px 30px;
+      }
+      @media (max-width: breakpoint(xs-lg-start)) {
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+      }
+      .our-story-img {
+        // background: url("#{$imageURl_1}/our-story-bg.png") center center
+        //   no-repeat;
+        height: 550px;
+        // width: 620px;
+        // border-radius: 15px;
+        background-size: cover;
+        position: relative;
+        border-radius: 10px;
+        @media (max-width: 1680px) {
+          width: auto;
+        }
+        @media (max-width: 1198px) and (min-width: 992px) {
+          height: 430px;
+        }
+        @media (max-width: 991px) and (min-width: 768px) {
+          height: 330px;
+        }
+        @media (max-width: breakpoint(sm-end)) {
+          height: 360px;
+          width: 390px;
+        }
+        @media (max-width: breakpoint(xs-end)) {
+          height: 360px;
+        }
+        @media (max-width: breakpoint(xs-lg-start)) {
+          width: 100%;
+        }
+        .our-story-left-content {
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 300px;
+          // width: 250px;
+          width: 300px;
+          // background-image: url("#{$imageURl_1}/Rectangle 48bg-blue.png");
+          // background: linear-gradient(
+          //     270deg,
+          //     #4383da 0%,
+          //     #5384e0 46.02%,
+          //     #6788e9 57.55%,
+          //     #7c89ef 100%
+          //   ),
+          //   url("#{$imageURl_1}/ez-our-story-intersection-img.png") center
+          //     center no-repeat;
+          // background: url("#{$imageURl_1}/ez-our-story-intersection-img.png") center center no-repeat;
+          background-size: cover;
+          background-position: top;
+          border-radius: 10px;
+          padding: 40px 15px;
+          z-index: 9;
+          @media (max-width: 1198px) and (min-width: 992px) {
+            height: 300px;
+            width: 230px;
+          }
+          @media (max-width: 991px) and (min-width: 768px) {
+            width: 200px;
+            height: 240px;
+          }
+          @media (max-width: breakpoint(md-start)) {
+            // width: auto;
+          }
+          @media (max-width: breakpoint(sm-end)) {
+            width: 180px;
+            height: 250px;
+          }
+          @media (max-width: breakpoint(xs-end)) {
+            width: 190px;
+            height: 240px;
+          }
+          @media (max-width: breakpoint(xs-md-start)) {
+            padding: 20px 15px;
+            width: 160px;
+            height: 220px;
+          }
+          .text-line1 {
+            font-size: 28px;
+            line-height: 32px;
+            @media (max-width: breakpoint(sm-end)) {
+              font-size: 22px;
+              line-height: 26px;
+            }
+            @media (max-width: breakpoint(xs-md-start)) {
+              font-size: 18px;
+              line-height: 22px;
+            }
+          }
+          .text-line2 {
+            font-size: 28px;
+            line-height: 32px;
+            font-weight: $font-weight-semi-bold;
+            @media (max-width: breakpoint(sm-end)) {
+              font-size: 22px;
+              line-height: 26px;
+            }
+            @media (max-width: breakpoint(xs-lg-start)) {
+              font-size: 18px;
+              line-height: 22px;
+            }
+          }
+          .text-line3 {
+            font-style: italic;
+            line-height: 24px;
+          }
+        }
+        .our-story-right-content {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          // background: url("#{$imageURl_1}/our-story-inner-bg.png") bottom center
+          //   no-repeat;
+          height: 440px;
+          // width: 380px;
+          width: 450px;
+          background-size: contain;
+          @media (max-width: 1440px) and (min-width: 1199px) {
+            width: 320px;
+          }
+          @media (max-width: 1198px) and (min-width: 992px) {
+            width: 300px;
+          }
+          @media (max-width: 991px) and (min-width: 768px) {
+            width: 200px;
+          }
+          @media (max-width: breakpoint(sm-end)) {
+            width: 220px;
+          }
+          @media (max-width: breakpoint(xs-end)) {
+            width: 230px;
+          }
+          @media (max-width: breakpoint(xs-md-start)) {
+            width: 160px;
+          }
+        }
+      }
+    }
+    .our-story-right-panel {
+      padding: 100px 100px 0px 100px;
+      background: url("/assets/our-story-bg.png") center center no-repeat;
+      @media (max-width: 1680px) {
+        padding: 100px 50px 0px 50px;
+      }
+      @media (max-width: breakpoint(xl-laptop)) {
+        padding: 60px 50px 0px 50px;
+      }
+      @media (max-width: breakpoint(md-end)) {
+        padding: 30px 30px 0px 30px;
+      }
+      span {
+        color: $accent-dark-color;
+        margin-bottom: 15px;
+      }
+      .uppar-content {
+        @media (max-width: breakpoint(xs-lg-start)) {
+          text-align: center;
+        }
+        @media (max-width: breakpoint(xs-end)) {
+          padding-bottom: 20px;
+        }
+        span {
+          font-size: 30px;
+          line-height: 34px;
+          color: $accent-dark-color;
+          /*harsh | start*/
+          @media (max-width: breakpoint(lg-end)) {
+            font-size: 28px;
+            line-height: 38px;
+          }
+          @media (max-width: breakpoint(lg-start)) {
+            font-size: 26px;
+            line-height: 36px;
+          }
+          @media (max-width: breakpoint(sm-end)) {
+            font-size: 24px;
+            line-height: 34px;
+          }
+          /*harsh | end*/
+
+          @media (max-width: breakpoint(xs-end)) {
+            font-size: 22px;
+            line-height: 36px;
+          }
+          @media (max-width: breakpoint(xs-lg-start)) {
+            font-size: 20px;
+            line-height: 36px;
+          }
+        }
+        .content-text {
+          color: $accent-dark-color;
+        }
+      }
+      .lower-content {
+        margin: 50px 0 80px 0;
+        @media (max-width: breakpoint(md-end)) {
+          margin: 50px 0 30px 0;
+        }
+        @media (max-width: breakpoint(xs-lg-start)) {
+          text-align: center;
+          margin: 0px 0 30px 0;
+        }
+      }
+      .btn-grp {
+        text-align: left;
+        @media (max-width: breakpoint(sm-end)) {
+          display: flex;
+          justify-content: center;
+          padding-bottom: 50px;
         }
       }
     }

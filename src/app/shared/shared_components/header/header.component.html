@@ -1,5 +1,5 @@
 <div class="ez-menu">
-  <div class="menu-header">
+  <div class="menu-header" [ngClass]="{ active: isShow }">
     <!-- header-menu | starts -->
     <div class="nav-bar-block background">
       <div class="d-flex justify-content-between align-items-center">
@@ -20,7 +20,6 @@
         <div class="d-flex align-items-center">
           <div class="menubar-block">
             <a class="menu-icon" (click)="isShow = !isShow">
-              <!-- <img [src]="root.imageUrl() + '/svg-icons/menu-bar-icon.svg'"> -->
               <div class="menu-line line1"></div>
               <div class="menu-line line2"></div>
               <div class="menu-line line3"></div>
@@ -29,29 +28,60 @@
         </div>
       </div>
     </div>
-    <div class="d-none menu-header-wrapper">
-      <div class="menu-header-left">
-        <div>
-          <div>
-            <!-- <img [src]="root.imageUrl() + '/ekzero-white-logo.png '" alt="" /> -->
-          </div>
-        </div>
-      </div>
-      <div class="menu-header-right">
-        <div class="mhr-wrapper">
-          <div class="link-button">
-            <a class="color-white border-right py-15 font-16" href="#">Blogs</a>
-          </div>
-          <div class="link-button">
-            <a class="color-white border-right py-15 font-16" href="#"
-              >Articles</a
-            >
-          </div>
-          <div class="link-button">
-            <a class="color-white py-15 font-16" href="#">Contact Us</a>
-          </div>
-          <div class="link-button">
-            <a class="color-white ml-30 font-20 font-24" href="#">X</a>
+    <div>
+      <div class="show-menu">
+        <div class="menu-content scrollable-body -ms-scrollbar">
+          <div class="">
+            <div class="left-menu text-ceneter">
+              <div class="list-item-wrapper">
+                <a routerLink="home" routerLinkActive="active" target="_top">
+                  <div class="list-item text-center">
+                    <div class="menu-pill">
+                      <div>HOME</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="list-item-wrapper">
+                <a
+                  routerLink="products"
+                  routerLinkActive="active"
+                  target="_top"
+                >
+                  <div class="list-item text-center">
+                    <div class="menu-pill">
+                      <div>OUR PRODUCTS</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="list-item-wrapper">
+                <a
+                  routerLink="about-us"
+                  routerLinkActive="active"
+                  target="_top"
+                >
+                  <div class="list-item text-center">
+                    <div class="menu-pill">
+                      <div>ABOUT US</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="list-item-wrapper">
+                <a
+                  routerLink="contact-us"
+                  routerLinkActive="active"
+                  target="_top"
+                >
+                  <div class="list-item text-center">
+                    <div class="menu-pill">
+                      <div>CONTACT US</div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

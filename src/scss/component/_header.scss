@@ -85,12 +85,6 @@
           }
         }
       }
-      // .nav-bar-block {
-      //     background-color: #000000;
-      //     z-index: 9;
-      //     position: relative;
-      //     transition-delay: 0s;
-      // }
     }
     .menu-header-wrapper {
       display: flex;
@@ -123,27 +117,224 @@
         padding: 15px 0px;
       }
     }
+    .show-menu {
+      transition: all 1s ease-in-out;
+      border-radius: 20px;
+      background-color: $accent-white-color;
+      opacity: 0.98;
+      width: 300px;
+      position: absolute;
+      margin: 0 auto;
+      right: 25px;
+      top: 90px;
+      opacity: 0;
+      visibility: hidden;
+      height: 100%;
+      @media (max-width: breakpoint(sm-end)) {
+        width: 85%;
+        right: 0px;
+        left: 0px;
+      }
+      &.page-not-found {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25) !important;
+        margin: 10px 70px !important;
+      }
+    }
   }
 
   .menu-header.active .show-menu {
     position: absolute;
-    top: 90px;
+    top: 115px;
     transition: all 1s ease-in-out;
     opacity: 1;
     visibility: visible;
     // box-shadow: -15px -15px 80px rgba(0,0,0,0.16);
   }
-  &#page-not-found-menu {
-    .menubar-block {
-      .menu-line {
-        background-color: $accent-primary-color;
+
+  .menu-content {
+    padding: 30px 50px;
+    overflow-y: auto;
+    height: 300px;
+    background: $accent-white-color;
+    box-shadow: -15px -15px 80px rgba(0, 0, 0, 0.16);
+    border-radius: 30px;
+    @media (max-width: breakpoint(lg-start)) {
+      padding: 30px;
+    }
+    @media (max-width: breakpoint(xs-lg-start)) {
+      padding: 30px 20px;
+    }
+
+    .left-menu {
+      .list-item-wrapper {
+        a {
+          color: $accent-dark-color;
+          font-size: $font-18;
+          line-height: 22px;
+          font-weight: $font-weight-semi-bold;
+          @media (max-width: breakpoint(lg-start)) {
+            font-size: $font-16;
+            line-height: 20px;
+          }
+          @media (max-width: breakpoint(lg-start)) {
+            font-size: $font-14;
+            line-height: 18px;
+          }
+          &:hover,
+          &.active {
+            .list-item {
+              .menu-pill {
+                color: $accent-primary-color;
+              }
+            }
+          }
+        }
+        .list-item {
+          padding: 25px 20px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          position: relative;
+          @media (max-width: breakpoint(xl-laptop)) {
+            padding: 20px 20px;
+          }
+          @media (max-width: breakpoint(lg-end)) {
+            padding: 15px 20px;
+          }
+          @media (max-width: breakpoint(md-end)) {
+            padding: 20px 20px;
+          }
+          @media (max-width: breakpoint(xs-end)) {
+            flex-direction: column;
+          }
+          @media (max-width: breakpoint(sm-end)) {
+            padding: 15px 5px;
+          }
+          &:hover {
+            background-color: #bcd6fb40;
+            border-radius: 30px;
+          }
+          .menu-pill {
+            width: 100%;
+            cursor: pointer;
+            @media (max-width: breakpoint(xs-end)) {
+              width: 85%;
+            }
+          }
+        }
+        .view-block {
+          width: 10%;
+          padding-left: 30px;
+          @media (max-width: breakpoint(xl-laptop)) {
+            width: 18%;
+          }
+          @media (max-width: breakpoint(lg-end)) {
+            width: 20%;
+          }
+          @media (max-width: breakpoint(md-end)) {
+            width: 23%;
+          }
+          @media (max-width: breakpoint(lg-start)) {
+            width: 20%;
+          }
+          @media (max-width: breakpoint(md-start)) {
+            display: none;
+          }
+          span {
+            color: #5083de;
+            font-size: $font-16;
+            line-height: 20px;
+            @media (max-width: breakpoint(lg-start)) {
+              font-size: $font-14;
+              line-height: 18px;
+            }
+          }
+          .view-arrow {
+            height: 2px;
+            background-color: #5083de;
+            position: relative;
+            width: 30px;
+            margin-left: 15px;
+            @media (max-width: breakpoint(lg-start)) {
+              width: 25px;
+              margin-left: 10px;
+            }
+            &::after {
+              content: "";
+              height: 12px;
+              width: 12px;
+              transform: rotate(45deg);
+              position: absolute;
+              right: 0px;
+              top: -5px;
+              border-top: 1px solid transparent;
+              border-bottom: 2px solid #5083de;
+              border-left: 1px solid transparent;
+              border-right: 2px solid #5083de;
+              transform: rotate(-45deg);
+              @media (max-width: breakpoint(lg-start)) {
+                top: -4px;
+                height: 10px;
+                width: 10px;
+              }
+            }
+          }
+          &.responsive-view {
+            display: none;
+            @media (max-width: breakpoint(md-start)) {
+              display: block;
+              width: auto;
+            }
+            @media (max-width: breakpoint(xs-end)) {
+              display: block;
+              width: 100%;
+            }
+            .resp-view {
+              @media (max-width: breakpoint(xs-end)) {
+                justify-content: flex-end !important;
+              }
+            }
+            span {
+              @media (max-width: breakpoint(md-start)) {
+                font-size: $font-14;
+                line-height: 18px;
+              }
+              @media (max-width: breakpoint(xs-end)) {
+                font-size: $font-12;
+                line-height: 16px;
+                display: block;
+                margin: 5px 10px 0 0;
+              }
+              @media (max-width: breakpoint(xs-md-start)) {
+                margin: 5px 0 0 0;
+              }
+            }
+            .view-arrow {
+              @media (max-width: breakpoint(md-start)) {
+                width: 22px;
+                margin-left: 10px;
+              }
+              @media (max-width: breakpoint(xs-end)) {
+                display: none;
+              }
+              &::after {
+                @media (max-width: breakpoint(md-start)) {
+                  content: "";
+                  height: 10px;
+                  width: 10px;
+                  top: -4px;
+                }
+              }
+            }
+          }
+        }
+        .view-all-resp {
+          display: none;
+        }
       }
     }
-    .show-menu {
-      // box-shadow: 0px 3px 10px rgb(0 0 0 / 30%);
-    }
-    .menu-content {
-      margin: 10px 0;
+    .menu-footer-panel {
+      margin-top: 30px;
     }
   }
 }

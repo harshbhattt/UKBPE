@@ -13,6 +13,22 @@ const routes: Routes = [{
     {
       path: 'home',
       loadChildren: () => import('./modules/home/home.module').then(m => m.HomeModule),
+    },
+    {
+      path: 'about-us',
+      loadChildren: () => import('./modules/about-us/about-us.module').then(m => m.AboutUsModule),
+    },
+    {
+      path: 'career',
+      loadChildren: () => import('./modules/careers/careers.module').then(m => m.CareersModule),
+    },
+    {
+      path: 'contact-us',
+      loadChildren: () => import('./modules/contact-us/contact-us.module').then(m => m.ContactUsModule),
+    },
+    {
+      path: 'products',
+      loadChildren: () => import('./modules/products/products.module').then(m => m.ProductsModule),
     }
   ]
 }];
